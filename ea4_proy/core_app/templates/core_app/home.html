@@ -1,0 +1,179 @@
+{% extends 'core_app/padre.html' %}
+{% load static %}
+{% block link %} <link rel="stylesheet" href="{% static 'core_app/css/card.css' %}"> {% endblock %}
+{% block title %}Gz Inicio{% endblock %}
+{% block content %}
+<!--CAROUSEL DE ARTE-->    
+<section>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="{% static 'core_app/img/pintura1.jpg' %}" class="d-block w-100 tam" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'core_app/img/pintura2.png' %}" class="d-block w-100 tam" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'core_app/img/pintura3.jpg'%}" class="d-block w-100 tam" alt="...">
+          </div>
+        </div>
+      </div>
+</section>
+<!--SEPARADOR SOMBREADO-->
+<div class="shadow-sm p-3 mb-5 bg-white rounded"></div>
+<!--SOBRE NOSOTROS-->
+<section>
+  <div class="container">
+      <div class="row">
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+          <h2 class="text-center"><img src="{% static 'core_app/img/logoGroundZero.png' %}" alt="logoGroundZero" class="tam-log"> Sobre nosotros</h2>
+          <p class="text-center">Somos un grupo de artistas plásticos dedicados a la pintura, escultura, orfebrería, tejido y otras expresiones artísticas.
+            </p>
+        </div>
+        <div class="col-sm">
+        </div>
+      </div>
+    </div>
+</section>
+<!--SEPARADOR SOMBREADO-->
+<div class="shadow-sm p-3 mb-5 bg-white rounded"></div>
+<!--CATALOGO-->
+<!-- 
+  <section>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <h2 class="text-center">Obras destacadas</h2>
+          <div class="carousel-item active">
+            CATALOGO 1  
+            <div class="container d-flex justify-content-center">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="card dec-hov" style="width: 18rem;">
+                      <img src="{% static 'core/img/pintura4.jpg'%}" class="card-img-top max-tam-img" alt="pintura4">
+                      <div class="card-body">
+                        <h5 class="card-title tex-center">Obra 1</h5>
+                        <p class="card-text tex-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                         
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card dec-hov" style="width: 18rem;">
+                      <img src="{% static 'core/img/pintura5.jpg'%}" class="card-img-top max-tam-img" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title tex-center">Obra 2</h5>
+                        <p class="card-text tex-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                         
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card dec-hov" style="width: 18rem;">
+                      <img src="{% static 'core/img/pintura6.jpg'%}" class="card-img-top max-tam-img" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title tex-center">Obra 3</h5>
+                        <p class="card-text tex-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                         
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <--CATALOGO 2-- 
+        <div class="carousel-item">
+          <div class="container d-flex justify-content-center">
+              <div class="row">
+                <div class="col-sm">
+                  <div class="card dec-hov" style="width: 18rem;">
+                      <img src="{% static 'core/img/pintura7.jpg'%}" class="card-img-top max-tam-img" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title tex-center">Obra 4</h5>
+                        <p class="card-text tex-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                         
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card dec-hov" style="width: 18rem;">
+                      <img src="{% static 'core/img/pintura8.jpg'%}" class="card-img-top max-tam-img" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title tex-center">Obra 5</h5>
+                        <p class="card-text tex-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                         
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                  <div class="card dec-hov" style="width: 18rem;">
+                      <img src="{% static 'core/img/pintura9.jpg'%}" class="card-img-top max-tam-img" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title tex-center">Obra 6</h5>
+                        <p class="card-text tex-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                         
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</section>
+-->
+<!--SEPARADOR SOMBREADO-->
+<div class="shadow-sm p-3 mb-5 bg-white rounded"></div>
+
+<!--API SPOTIFY-->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+      </div>
+      <div class="col-sm">
+        <H3 class="text-center">¿Quieres buscar los albumes de tu artista?</H3>
+        <p class="text-center">Mientras ves las obras de arte, puedes ver los albumes y canciones de tu artista favorito a través de Spotify!</p>
+        <div class="form-group">
+          <label for="nombreArtista">Id del Artista</label>
+          <input type="text" name="nombreArtista" id="nombreArtista" class="form-control" placeholder="Ingresa el id del artista" required>
+        </div>
+        <div class="form-group">
+          <label for="token">Token</label>
+          <input type="text" name="" id="token" class="form-control" placeholder="Ingresa tu token" required>
+        </div>  
+        <button class="btn btn-primary" id="traerSpotify">Buscar</button>
+        <button class="btn btn-primary" id="btnLimpiar">Limpiar</button>
+      </div>
+      <div class="col-sm">
+      </div>
+    </div>
+    <!--SEPARADOR-->
+    <div class="shadow-none p-3"></div>
+    <div class="card-columns" id="contenedor">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title that wraps to a new line</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+  </div>
+</section>
+<!--SEPARADOR SOMBREADO-->
+<div class="shadow-sm p-3 mb-5 bg-white rounded"></div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+  <script src="{% static 'core_app/js/api.js' %}"></script>
+{% endblock %}

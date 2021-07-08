@@ -1,0 +1,27 @@
+body{
+    background-image: url("../img/fondo3.jpg");
+    background-size: cover;
+}
+.pad{
+    margin-top: 5%;
+    margin-bottom: 5%  
+}
+
+.bck-w{
+    background-color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0) 1px solid;
+    border-radius: 3%;
+}
+.w-35{
+    width: 35%;
+}
+.text-center{
+    text-align: center;
+}
+.tam-log{
+    width: 40px;
+    height: 40px;
+}
+.alert{
+    border: red 1px solid;
+}

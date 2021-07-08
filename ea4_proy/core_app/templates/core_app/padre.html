@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'core_app/css/style.css' %}">
+  {% block link %}{%endblock%}
+  <title>{%block title %} {%endblock%}</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bck-color">
+        <img src="{% static 'core_app/img/logoGroundZero.png'%}" alt="logoGroundZero" class="tam-log">
+          <h3 class="user-select-none"><i>Ground Zero</i></h3>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'inicio_home' %}">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'galeria' %}" target="_blank">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contacto' %}" target="_blank">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Más opciones
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{% url 'listado'%}" target="_blank">Lista de obras</a>
+                  <a class="dropdown-item" href="{% url 'agregar' %}" target="_blank">Agregar obras</a>
+              </li>
+            </ul>
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Inicio sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Registro</a>
+              </li>
+            </ul>
+          </div>
+    </nav>
+</header>
+{% block content %} {%endblock%}
+<footer>
+    <div class="h-auto d-inline-block w-100 p-3 bck-color">
+      <div class="container">
+        <div class="row">
+          <!--CONTACTOS-->
+          <div class="col-sm">
+            <h3 class="tex-center">Contactos</h3> <hr>
+            <p class="tex-center">
+            <a href="#" class="link" target="_blank">Formulario de contacto</a>
+            </p>
+          </div>
+          <!--REDES SOCIALES-->
+          <div class="col-sm">
+            <h3 class="tex-center">Redes sociales</h3> <hr>
+            <p class="tex-center">
+              <!--LOGO FACEBOOK-->
+              <a href="https://www.facebook.com" target="_blank"><img src="{% static 'core_app/img/svg-logo/facebook.svg' %}" alt="Logo_Facebook"></a><br>
+              <!--LOGO INSTAGRAM-->
+              <a href="https://www.instagram.com" target="_blank"><img src="{% static 'core_app/img/svg-logo/instagram.svg' %}" alt="Logo_Instagram"></a> <br>
+              <!--LOGO TWITTER-->
+              <a href="https://twitter.com/?lang=es" target="_blank"><img src="{% static 'core_app/img/svg-logo/twitter.svg' %}" alt="Logo_Twitter"></a>
+            </p>
+          </div>
+          <!--UBICACIÓN-->
+          <div class="col-sm">
+            <h3 class="tex-center">Ubicación</h3>
+            <hr> 
+            <p class="tex-center"><img src="{% static 'core_app/img/svg-logo/geo-alt-fill.svg' %}" alt="logo_ubicación"> Santiago de Chile, Los Quillayes 0103, <wbr> edificio #24</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--SEGUNDA PARTE DEL FOOTER, DERECHOS DE AUTOR-->
+    <div class="h-100 d-inline-block w-100 p-3 bck-color-2">
+      <div class="row">
+          <div class="col-6">
+              <div class="tex-center">
+                  © 2021 Todos los Derechos Reservados | Victor Vargas
+              </div>
+          </div>
+          <div class="col-6">
+              <div class="tex-center">
+                  <a href="#" class="link">Informacion Compañia</a> | <a href="#" class="link">Privacion y Politica</a> | <a href="#" class="link">Terminos y Condiciones</a>
+              </div>
+          </div>
+      </div>
+  </div>
+    </footer>
+</body>
+</html>

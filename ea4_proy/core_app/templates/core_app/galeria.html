@@ -1,0 +1,32 @@
+{% extends 'core_app/padre.html' %}
+{% load static %}
+{% block link %} <link rel="stylesheet" href="{% static 'core_app/css/galeria.css'%}">{% endblock %}
+{% block title %}Gz Galeria{% endblock %}
+{% block content %}
+
+<div class="container h-auto pad-bot">
+  <h1 class="title center"> Obras 
+  </h1>
+  <div class="container">
+    <div class="dsp-card">
+      {% for ob in obra %}
+        <div class="dsp-card">
+          <div class="card">
+            <img src="{{ob.imagen.url}}" class="card-img-top" alt="{{ob.imagen}}">
+            <div class="card-body">
+              <h4 class="center">{{ob.nombreObra}}</h4>
+              <div class="card-body">
+                <p class="center">{{ob.descripcion}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+{% endblock %}
