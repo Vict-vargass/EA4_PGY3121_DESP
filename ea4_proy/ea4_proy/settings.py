@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'core_app',
     'rest_framework',
     'rest_api',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #MEDIA 
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL= 'media/'
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}
