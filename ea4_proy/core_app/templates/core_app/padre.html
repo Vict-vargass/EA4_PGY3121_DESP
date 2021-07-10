@@ -24,18 +24,18 @@
                 <a class="nav-link" href="{% url 'inicio_home' %}">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'galeria' %}" target="_blank">Galeria</a>
+                <a class="nav-link" href="{% url 'galeria' %}">Galeria</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'contacto' %}" target="_blank">Contacto</a>
+                <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Más opciones
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="{% url 'listado'%}" target="_blank">Lista de obras</a>
-                  <a class="dropdown-item" href="{% url 'agregar' %}" target="_blank">Agregar obras</a>
+                  <a class="dropdown-item" href="{% url 'listado'%}" >Lista de obras</a>
+                  <a class="dropdown-item" href="{% url 'agregar' %}" >Agregar obras</a>
               </li>
             </ul>
             <ul class="nav justify-content-end">
@@ -58,7 +58,7 @@
           <div class="col-sm">
             <h3 class="tex-center">Contactos</h3> <hr>
             <p class="tex-center">
-            <a href="#" class="link" target="_blank">Formulario de contacto</a>
+            <a href="{% url 'contacto' %}" class="link" >Formulario de contacto</a>
             </p>
           </div>
           <!--REDES SOCIALES-->
